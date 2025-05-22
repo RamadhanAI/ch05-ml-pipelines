@@ -1,0 +1,7 @@
+stages:
+  preprocess:
+    cmd: python scripts/preprocess.py
+    deps:
+      - data/raw/sales.csv
+    outs:
+      - data/processed/sales_clean.csv
